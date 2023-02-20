@@ -15,7 +15,6 @@ tempDiv.innerHTML = ele;
 var parent = document.querySelectorAll('.bottomBarContainer-175')[0]; 
 parent.insertBefore(tempDiv, parent.children[2]);
 
-Remove RSVP:
 $( "#rsvp" ).click(function() {
   document.getElementById('rsvp').classList.remove('root-245');
 });
