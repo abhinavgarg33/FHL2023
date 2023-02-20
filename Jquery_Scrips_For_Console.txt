@@ -1,0 +1,32 @@
+
+document.getElementById("owaActivityFeedButton").innerHTML += '<div class="_2YAzF_3mQ1EQxfCuxswbgq _2k6zfb2H24K6gE8s_a-uKp"><span class="_17yae5BwxXihd7lpwKSVp8 o365sx-accent-border o365sx-badge">1</span></div>'
+
+$( "._2YAzF_3mQ1EQxfCuxswbgq" ).click(function() {
+  var eleme = document.querySelector("._2YAzF_3mQ1EQxfCuxswbgq")
+  eleme.parentNode.removeChild(eleme)
+});
+
+
+window.location.href = "https://outlook.office.com/calendar/view/month"
+
+var ele = '<div class="ms-OverflowSet-item ribbonOverflowItem item-162" role="none"><button type="button" id="rsvp" data-automation-type="RibbonFlyoutAnchor" data-unique-id="Ribbon-2534" data-is-focusable="true" class="ms-Button ms-Button--hasMenu root-245 root-234" aria-label="Filter" aria-describedby="ktp-layer-id ktp-h-f" aria-expanded="false" aria-haspopup="true" data-ktp-target="ktp-h-f" data-ktp-execute-target="ktp-h-f" tabindex="0"><span class="ms-Button-flexContainer flexContainer-165" data-automationid="splitbuttonprimary"><span class="ms-Button-textContainer textContainer-246"><span class="ms-Button-label textContainer label-213" id="id__47">Pending Response</span></span></span></button></div>'
+var tempDiv = document.createElement('div');
+tempDiv.innerHTML = ele;
+var parent = document.querySelectorAll('.bottomBarContainer-175')[0]; 
+parent.insertBefore(tempDiv, parent.children[2]);
+
+Remove RSVP:
+$( "#rsvp" ).click(function() {
+  document.getElementById('rsvp').classList.remove('root-245');
+});
+
+
+<p> Test_SPO has invited you to meeting <br> Technical Design Discussion </br> </p>
+Thu 2023-02-23 11:00-11:30
+
+<p> Test_SPO has invited you to meeting <br> Location Ivestigation </br> </p>
+Mon 2023-02-20 12:30-13:30
+
+<p> Test_SPO has cancelled the meeting <br> 1x1 Discussion </br> </p>
+Tue 2023-02-21 10:30-11:30
+
